@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>if 和 forEach 的用法</h2>
+    <ul>
+        <% data.forEach(function(item){ %>
+                <li> 
+                    <h4>Age: </h4> <span> <%= item.age %> </span>
+                    <% if(item.age > 25){ %>
+                        <span>大于25</span>
+                    <% } %>
+                </li>
+                <li>
+                     <% item.name.forEach(function(item){ %>
+                            <h4>Name: </h4> <span><%= item.name%></span>
+                     <% }) %>
+                </li>
+        <% }) %>
+    </ul>
+</body>
+</html>
