@@ -15,7 +15,7 @@ $ npm install ejs -save-dev
 
 ####  安装 nodemon
 ```
-$ npm install nodemon --save-dev 
+$ npm install -g nodemon --save-dev 
 ```
 ####  运行app.js 文件
 ```
